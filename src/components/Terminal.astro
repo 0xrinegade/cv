@@ -14,6 +14,11 @@
     u = setInterval(() => {
       if (x >= msg.length) {
         clearInterval(u);
+        // Show image after typing finishes
+        const imageDiv = document.getElementById('image_content');
+        if (imageDiv) {
+          imageDiv.style.display = 'block';
+        }
       }
       mc.textContent += msg[x] ? msg[x] : "";
       x++;
@@ -61,8 +66,10 @@ rinegade_sol stirs the pot, slamming global elites, hyping their opensvm project
 The X community praises @rinegade_sol's $SVMAI project, with @hdegrootvan betting on its success and @metasal_ lauding their builder insights.
 
 > will lick your shoes for gpu node  
--@rinegade_sol
+-@rinegade_sol</div>
 
-
+<div id="image_content" style="margin-top: 20px; text-align: center; display: none;">
+  <img src="/toly_retweet.png" alt="Toly retweet" style="display: block; margin: 0 auto; max-width: 80%; height: auto; border: 1px solid #ffffff; padding: 10px; background-color: rgba(255, 255, 255, 0.1); border-radius: 4px;" />
+</div>
 
 <div id="fgbg"></div>
